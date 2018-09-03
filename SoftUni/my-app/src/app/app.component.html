@@ -1,0 +1,20 @@
+<h1>Welcome to GitHub Profile!</h1>
+<nav>
+    <ul>
+        <li>
+            <a routerLink="/home">Home</a>
+        </li>
+        <li>
+            <a routerLink="/about">About</a>
+        </li>
+    </ul>
+</nav>
+
+<router-outlet></router-outlet>
+
+<br>
+<br>
+<div>Your name:</div>
+<input #name [(ngModel)]="username" placeholder="Insert name" type="text">
+<!-- <button (click)="showName(name.value)">Send</button> -->
+<h3 *ngIf="username">Your name is: {{username}}</h3>

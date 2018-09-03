@@ -1,0 +1,10 @@
+<button (click)="showContacts()">Show Contacts</button>
+<div *ngIf="isShown">
+  <ul>
+    <li *ngFor="let contact of contacts">
+      <div>Position: {{contact.id}}</div>
+      <div>Name: {{contact.name}}</div>
+      <div>Phone: {{contact.phone}}</div>
+    </li>
+  </ul>
+</div>
